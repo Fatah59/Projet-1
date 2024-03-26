@@ -52,7 +52,7 @@ header img {
 .search-bar {
 
     display: flex;
-    width: 23%;
+    width: 25%;
 
 
 }
@@ -66,14 +66,16 @@ header img {
     flex-grow: 1;
     font-weight: bold;
     font-size: 15px;
+    padding: 0 10px;
 }
 
 .button-search {
     display: flex;
+    flex-grow: 1;
 }
 
 .fa-solid.fa-magnifying-glass {
-    opacity: 0.5%;
+    display: none;
 }
 
 .fa-solid.fa-location-dot {
@@ -81,7 +83,7 @@ header img {
 }
 
 .icon-location {
-    width: 13%;
+    width: 15%;
     background-color: rgb(242, 242, 242);
     justify-content: center;
     display: flex;
@@ -468,7 +470,7 @@ footer {
         font-size: 13px;
     }
 
-    .activités-cards img{
+    .activités-cards img {
 
         height: 200px;
     }
@@ -484,8 +486,7 @@ footer {
         width: 100%;
     }
 
-
-
+   
     .filter-bar {
 
         width: 100%;
@@ -609,6 +610,21 @@ footer {
         width: 100%;
     }
 
+    .fa-solid.fa-magnifying-glass {
+        display: block;
+        background-color: rgb(0, 101, 252);
+        color: #fff;
+        padding: 16px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .search-button {
+        display: none;
+    }
+
     .bouton-hebergements {
         border-bottom: 2px solid #0065FC;
         border-top: none;
@@ -622,6 +638,7 @@ footer {
 
     footer {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
 }
