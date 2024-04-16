@@ -16,7 +16,7 @@
 .header {
     width: 100%;
     display: flex;
-    align-items: center;
+   
     justify-content: space-between;
     height: 80px;
 }
@@ -34,9 +34,8 @@ header img {
 }
 
 
-.group {
-    padding: 50px;
-}
+
+
 
 .location-text {
     font-weight: bold;
@@ -108,6 +107,11 @@ header img {
     margin-left: 10px;
 }
 
+.filter:hover {
+    background-color: #DEEBFF;
+  }
+
+
 .filters {
     width: 100%;
     display: flex;
@@ -139,10 +143,15 @@ header img {
 
     width: 21%;
     align-self: flex-start;
-    align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   
+}
+
+a:hover{
+
+    border-top: 3px solid #0065FC;
+    
 }
 
 .bouton-hebergements {
@@ -209,14 +218,12 @@ header img {
 }
 
 body {
-    justify-content: center;
-    width: 86%;
+    width: 1440px;
     margin: auto;
 }
 
 .main-container {
     width: 100%;
-    padding: 0 50px;
     box-sizing: border-box;
 
 }
@@ -224,6 +231,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    padding: 15px;
 }
 
 .section-title {
@@ -359,7 +367,7 @@ a {
 .activités {
 
     width: 100%;
-    padding: 0 50px;
+  
     box-sizing: border-box;
     margin-top: 80px;
 
@@ -395,7 +403,6 @@ a {
 
 footer {
     display: flex;
-    justify-content: space-around;
     margin-top: 50px;
     background-color: var(--main-bg-color);
     padding: 0 50px;
@@ -431,11 +438,14 @@ footer {
         width: 100%;
     }
 
+   
+
     .menu {
         width: 30%;
         display: flex;
         justify-content: center;
     }
+
 
     .search-bar {
         width: 40%;
@@ -445,7 +455,7 @@ footer {
     .filter-bar {
         width: 72%;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .bouton {
@@ -503,6 +513,9 @@ footer {
         width: 100%;
     }
 
+    a{
+        padding: 11px;
+    }
    
     .filter-bar {
 
@@ -608,14 +621,12 @@ footer {
         width: 100%;
     }
 
-    .header {
-        flex-direction: column;
-    }
+    
 
     .header img {
 
         padding: 30px;
-        width: 30%;
+       
     }
 
     .menu {
