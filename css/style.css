@@ -26,6 +26,7 @@
 header img {
 
     width: 43%;
+    padding: 15px 0px 15px 0px;
 }
 
 .filtres {
@@ -428,7 +429,10 @@ footer {
         width: 40%;
     }
 
-
+  
+    .liens{
+        margin-top: 6px;
+    }
     .search-bar {
         width: 40%;
     }
@@ -508,18 +512,24 @@ footer {
         text-align: center;
        
     }
-
+    .hebergements-lien:hover {
+        color:#0065FC;
+    }
+    .activites-lien:hover{
+        color:#0065FC;
+    }
     .liens a:hover{
         border-top: none;
-        border-bottom: 3px blue;
-      
     }
 
-
-
-    a:hover {
-        border-bottom: 3px blue;
+    .liens a.hebergements-lien:hover {
+        border-bottom: 3px solid #0065FC;
     }
+
+    .liens a.activites-lien:hover{
+        border-bottom: 3px solid #0065FC;       
+    }
+   
 
     .logo {
         display: flex;
