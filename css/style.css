@@ -16,24 +16,23 @@
 .header {
     width: 100%;
     display: flex;
-   
+
     justify-content: space-between;
     height: 80px;
 }
 
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 header img {
 
     width: 43%;
 }
 
-
+.filtres {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 
 
@@ -95,7 +94,7 @@ header img {
     font-weight: bold;
     margin-top: 30px;
     display: flex;
-    width: 50%;
+    width: 65%;
 }
 
 .filter {
@@ -109,7 +108,7 @@ header img {
 
 .filter:hover {
     background-color: #DEEBFF;
-  }
+}
 
 
 .filters {
@@ -141,26 +140,24 @@ header img {
 
 .menu {
 
-    width: 21%;
-    align-self: flex-start;
-    display: flex;
-    justify-content: space-between;
-  
+    width: 30%;
+
 }
 
-a:hover{
+a:hover {
 
     border-top: 3px solid #0065FC;
-    
+
 }
 
 .bouton-hebergements {
     width: 50%;
     display: flex;
     justify-content: end;
-   
+
 }
-.bouton-hebergements:hover{
+
+.bouton-hebergements:hover {
 
     border-top: 2px solid #0065FC;
 }
@@ -186,7 +183,7 @@ a:hover{
     width: 28%;
 }
 
-.bouton-activités:hover{
+.bouton-activités:hover {
 
     border-top: 2px solid #0065FC;
 }
@@ -197,29 +194,17 @@ a:hover{
     text-decoration: none;
 }
 
-.economique {
+.filter-title {
 
     margin-left: inherit;
 }
 
-.familial {
 
-    margin-left: inherit;
-}
-
-.romantique {
-
-    margin-left: inherit;
-}
-
-.nos-pepites {
-
-    margin-left: inherit;
-}
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
+    padding: 1%;
 }
 
 .main-container {
@@ -367,7 +352,7 @@ a {
 .activités {
 
     width: 100%;
-  
+
     box-sizing: border-box;
     margin-top: 80px;
 
@@ -430,20 +415,17 @@ footer {
         flex-direction: column;
     }
 
+    body{
+        width: 80%;
+    }
+
     .hebergements {
         width: 100%;
     }
 
-    body {
-        width: 100%;
-    }
-
-   
 
     .menu {
-        width: 30%;
-        display: flex;
-        justify-content: center;
+        width: 40%;
     }
 
 
@@ -453,9 +435,11 @@ footer {
 
 
     .filter-bar {
-        width: 72%;
+        width: 82%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: small;
     }
 
     .bouton {
@@ -502,9 +486,49 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
 
-    .populaires-cards{
+    /* ... */
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    body{
+        margin:revert;
+    }
+
+    .liens {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liens a {
+        width: 50%;
+        line-height: 50px;
+        text-align: center;
+       
+    }
+
+    .liens a:hover{
+        border-top: none;
+        border-bottom: 3px blue;
+      
+    }
+
+
+
+    a:hover {
+        border-bottom: 3px blue;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .populaires-cards {
         width: 100%;
     }
 
@@ -513,10 +537,7 @@ footer {
         width: 100%;
     }
 
-    a{
-        padding: 11px;
-    }
-   
+
     .filter-bar {
 
         width: 100%;
@@ -617,16 +638,12 @@ footer {
         width: 100%;
     }
 
-    body {
-        width: 100%;
-    }
 
-    
+
 
     .header img {
-
         padding: 30px;
-       
+        width: 20%;
     }
 
     .menu {
@@ -648,7 +665,7 @@ footer {
         align-items: center;
         margin: auto;
     }
-    
+
     .search-button {
         display: none;
     }
